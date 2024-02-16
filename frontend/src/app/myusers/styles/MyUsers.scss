@@ -1,25 +1,42 @@
 #MyUsers {
   min-height: 100vh;
-  background-color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  h1 {
-    margin: 1rem 0;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  .title {
+    margin: 2rem 0;
     line-height: 1.2;
   }
-
-  input , button { 
-    margin: 10px 0;
-    font-size: 1.2rem;
-    padding: 10px;
-  }
   
-  button { 
-    cursor: pointer;
-    background-color: cornflowerblue;
-    color: white;
+  .inputsAndBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 80%;
+    margin-bottom: 5rem;
+
+    input:not(.input_message) {
+
+      font-size: 1.2rem;
+      padding: 10px;
+      outline: 1px solid #999;
+      border-radius: 0.5vmax;
+    }
+
+    .btn_join_room {
+
+      font-size: 1.2rem;
+      border-radius: 0.5vmax;
+      cursor: pointer;
+      padding: 1rem 10px !important;
+      // width: 100%;
+      background-color: var(--pink);
+      color: white;
+    }
   }
 
 }
