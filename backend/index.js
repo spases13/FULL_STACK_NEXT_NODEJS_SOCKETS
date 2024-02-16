@@ -6,10 +6,7 @@ const { Server } = require("socket.io")
 
 const port = 4450
 
-app.use(cors({
-  // origin: "http://localhost:3000"
-  origin: "*"
-}))
+app.use(cors())
 
 app.get("/", (req, res) => {
   res.send("Welcome to the Home Page Of Backend Server")
